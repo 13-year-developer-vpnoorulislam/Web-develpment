@@ -15,3 +15,13 @@ a:hover {
     background: rgb(24, 24, 24);
     color: aliceblue;
 }
+body {
+    background-color: maroon;
+}
+button {
+    color: aliceblue;
+    background-color: rgb(83, 0, 0);
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
