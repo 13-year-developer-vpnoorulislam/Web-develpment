@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Show a Color Picker</h2>
+
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+<form action="javascript:void(0)">
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit" onclick="myfunc()">
+</form>
+<script>
+    function myfunc() {
+      val = document.getElementById('favcolor').value;
+        alert(val);        
+        console.log(val);
+    }
+</script>
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11.</p>
+
+</body>
+</html>

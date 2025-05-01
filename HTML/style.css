@@ -1,0 +1,58 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+a {
+    transition: 2s;
+    margin: 15px;
+}
+a:link
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+a:hover
+{
+    text-decoration: none;
+    font-size: 25px;
+    color:  burlywood;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:black;
+}
+a:visited
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: maroon;
+}
+a:active
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+table {
+    float: left;
+}
+table , th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: black; */
+    color: #333;
+}
