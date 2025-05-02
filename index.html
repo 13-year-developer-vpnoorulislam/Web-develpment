@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="img/favicon_rect.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #navbar {
+            background: rgb(53, 53, 53);
+            
+        }
+        #navbar a {
+            text-decoration: none;
+            color: aliceblue;
+            display: inline-block;
+            padding: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: 1s;
+        }
+        #navbar a:hover {
+            background: black;
+        }
+        #search {
+            float: right;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="javascript:void(0)" style="color: rgb(233, 151, 0);">amazon.in</a>
+        <a href="javascript:void(0)">Account</a>
+        <a href="javascript:void(0)">My Cart</a>
+        <a href="javascript:void(0)">Contact Us</a> 
+        <form action="javascript:void(0)" method="get" id="search">
+            <input placeholder="Search Amazon.in"/>
+            <button style="background: rgb(233, 151, 0); color: aliceblue;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
