@@ -1,29 +1,40 @@
  * {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    color: #fff;
+    margin:  0;
 }
- div {
+.container {
+    padding: 10px;
+    border: 2px solid wheat;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* only applicable to main axis */
+    align-items: center; /* only applicable to cross axis, both justify-content and align-items are same */
+}
+.container div {
+    color: #000;
+    text-align: center;
     background: cyan;
     height: 100px;
     width: 100px;
-    border: 3px solid rgb(37, 37, 37);
-    /* margin: 20px; */
     display: inline-block;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+
 }
 #box1 {
-     position: static;/* Default */
 }
 #box2 {
-    position: relative;/*  moves 30px down from the top relative to its mean position */
-    top: 20px;
-    left: 20px;
 }
 #box3 {
-    position: fixed ;
-    top: 10px;
+    height: 150px;
+
 }
 body {
-    background-image: url(img/bimg1.jpg);
-    /* background-size: auto; */
-    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 20;
 }
