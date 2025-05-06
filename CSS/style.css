@@ -2,39 +2,32 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #fff;
-    margin:  0;
 }
-.container {
-    padding: 10px;
-    border: 2px solid wheat;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; /* only applicable to main axis */
-    align-items: center; /* only applicable to cross axis, both justify-content and align-items are same */
-}
-.container div {
-    color: #000;
-    text-align: center;
-    background: cyan;
+.t {
     height: 100px;
     width: 100px;
-    display: inline-block;
-    border: 3px solid rgb(255, 255, 255);
-    margin: 10px;
-
-}
-#box1 {
-}
-#box2 {
-}
-#box3 {
-    height: 150px;
-
 }
 body {
     text-align: center;
     z-index: 20;
+}
+@media (max-width: 300px) {
+    .t {
+        background: green;
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .t {
+        background: pink;
+    }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+    .t {
+        background: red;
+    }
+}
+@media (min-width: 600px) {
+    .t {
+        background: blue;
+    }
 }
