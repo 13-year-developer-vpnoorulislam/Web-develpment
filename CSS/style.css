@@ -3,6 +3,41 @@
     text-decoration: none;
     color: #fff;
 }
+/* div {
+    height: 150px;
+    width: 100px;
+    background: rosybrown;
+    } */
+.loader {
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 8px solid rgb(245, 136, 136);
+    border-top: 10px solid maroon;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    bottom: 45%;
+    right: 45%;
+    animation-name: loader_ani;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(10);
+    /* animation-direction: alternate; */
+}
+@keyframes loader_ani {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* div:hover {
+    background: magenta;
+    font-size: 30px;
+} */
 .t {
     height: 100px;
     width: 100px;
