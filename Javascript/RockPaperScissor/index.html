@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p style="margin-bottom: 20px;">Choose your move wisely</p>
+    <div class="scoreboard">
+        <div class="items">
+            <p>YOU</p>
+            <p id="my_score">0</p>
+            <div class="rounds">
+                <span class="com_round" id="round1"></span>
+                <span class="com_round" id="round2"></span>
+                <span class="com_round" id="round3"></span>
+                <span class="com_round" id="round4"></span>
+                <span class="com_round" id="round5"></span>
+            </div>
+        </div>
+        <div class="items">
+            <p>ROUND</p>
+            <p id="round">1/5</p>
+            <p style="font-size: 20px;">BEST OF 5</p>
+        </div>
+        <div class="items">
+            <p>COMPUTER</p>
+            <p id="com_score">0</p>
+            <div class="rounds">
+                <span class="com_round" id="round1"></span>
+                <span class="com_round" id="round2"></span>
+                <span class="com_round" id="round3"></span>
+                <span class="com_round" id="round4"></span>
+                <span class="com_round" id="round5"></span>
+            </div>
+        </div>
+    </div>
+    <div class="game_container">
+        <div class="user">
+            <span id="userEmoj"></span>
+            <span>YOU</span>
+        </div>
+        <p style="   font-size: 50px;
+    text-shadow:10px 10px 100px white,-10px -10px 100px white,10px 10px 100px white,-10px -10px 100px white,10px 10px 100px white,-10px -10px 100px white;
+">VS</p>
+        <div class="com">
+            <span id="comEmoj"></span>
+            <span>CPU</span>
+        </div>
+    </div>
+    <div class="moves">
+        <button id="rock_btn">✊<p>Rock</p></button>
+        <button id="paper_btn">✋<p>Paper</p></button>
+        <button id="scissors_btn">✌<p>Scissors</p></button>
+    </div>
+    <button class="close_btn" style="font-size: 25px;" onclick="reset();">Reset</button>
+        <h1>How To Play</h1>
+    <div class="ins">
+        <div class="ins_item">
+            <p>✊</p>
+            <p>Rock</p>
+            <p>Crushes scissors but is covered by paper</p>    
+        </div>
+        <div class="ins_item">
+            <p>✋</p>
+            <p>Paper</p>
+            <p>Covers rock but is cut by scissors</p>    
+        </div>
+        <div class="ins_item">
+            <p>✌️</p>
+            <p>Scissors</p>
+            <p>Cuts paper but is crushed by rock</p>    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
