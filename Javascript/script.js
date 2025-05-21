@@ -116,24 +116,153 @@ function col() {
 // msg();
 // msg = 5;
 // console.log(msg);
-let str = prompt('Enter the string:');
-let str_vow = [],str_con = [];
-let no_vow = 0,no_con = 0;
-function vow(string){
-    let vowels = ['a','A','e','E','i','I','o','O','u','U'];
-     for (let letter of string){
-        for (let _vow_letter of vowels){
-            if (letter === _vow_letter){
-               no_vow++;
-               str_vow.push(_vow_letter);
-            }
-        }
-     }
-     no_con = string.length - no_vow;
-     for (let i = 0;i< str.length;i++){
-        str.replace(/str_vow[i]/," ");
-     }
-    //  str_con.push(str);
-     console.log(`No of Vowels: ${no_vow}\nVowel included in the string:${str_vow}\nNo of Consonants: ${no_con}\nConsonants included in the string:${str}`);
-}
-vow(str);
+// let str = prompt('Enter the string:');
+// let str_vow = [],str_con = [];
+// let no_vow = 0,no_con = 0;
+// function vow(string){
+//     let vowels = ['a','A','e','E','i','I','o','O','u','U'];
+//     for(let str_char of string){
+//     switch(str_char) {
+//         case vowels[0]:
+//             no_vow++;
+//             str_vow.push(vowels[0]);
+//         break;
+//         case vowels[1]:
+//             no_vow++;
+//             str_vow.push(vowels[1]);
+//         break;
+//         case vowels[2]:
+//             no_vow++;
+//             str_vow.push(vowels[2]);
+//         break;
+//         case vowels[3]:
+//             no_vow++;
+//             str_vow.push(vowels[3]);
+//         break;
+//         case vowels[4]:
+//             no_vow++;
+//             str_vow.push(vowels[4]);
+//         break;
+//         case vowels[5]:
+//             no_vow++;
+//             str_vow.push(vowels[5]);
+//         break;
+//         case vowels[6]:
+//             no_vow++;
+//             str_vow.push(vowels[6]);
+//         break;
+//         case vowels[7]:
+//             no_vow++;
+//             str_vow.push(vowels[7]);
+//         break;
+//         case vowels[8]:
+//             no_vow++;
+//             str_vow.push(vowels[8]);
+//         break;
+//         case vowels[9]:
+//             no_vow++;
+//             str_vow.push(vowels[9]);
+//         break;
+//         default:
+//             no_con++;
+//             str_con.push(str_char);
+//         break;
+//     }        
+// }
+//      console.log(`No of Vowels: ${no_vow}\nVowel included in the string:${str_vow}\nNo of Consonants: ${no_con}\nConsonants included in the string:${str_con}`);
+//     let vowels = ['a','A','e','E','i','I','o','O','u','U'];
+//      for (let letter of string){
+//         for (let _vow_letter of vowels){
+//             if (letter === _vow_letter){
+//                no_vow++;
+//                str_vow.push(_vow_letter);
+//             }
+//         }
+//      }
+//      no_con = string.length - no_vow;
+//      for (let i = 0;i< str.length;i++){
+//         str.replace(/str_vow[i]/," ");
+//      }
+//     //  str_con.push(str);
+//      console.log(`No of Vowels: ${no_vow}\nVowel included in the string:${str_vow}\nNo of Consonants: ${no_con}\nConsonants included in the string:${str}`);
+// }
+// vow(str);
+let num = [1,2,3,4,5,6,7,8,9];
+// let test =  num.map(function sqr(val,ind,arr){
+//     console.log(val*val);
+//     return val*val;
+// });
+// let test = num.filter((val,ind) => {
+//     if(val % 3 == 0){
+//         return val;
+//     } else{
+//    return 0;
+//    }
+// });
+// let marks = [90,84,97,38,49,60];
+// const filteredMarks = marks.filter((val) => {
+//     if (val >= 90){
+//         return val;
+//     }
+// });
+// console.log(filteredMarks);
+// let num1 = [];
+// let n = parseInt(prompt("Enter the Number: "));
+// function count(n){
+//     let i = 1;
+//     while(i<=n){
+//         num1.push(i);
+//         i++;
+//     }
+//     console.log(num1);
+// }
+// count(n);
+// let addition = num1.reduce((res,cur) => {
+//     return res + cur;
+// });
+// console.log(addition);
+// let mul = num1.reduce((res,cur) => {
+//     return res * cur;
+// });
+// console.log(mul);
+let i = 0;
+// while (i < document.body.children.length) {
+// document.querySelectorAll(".com")[i].style = "color: red; background-color: black; border-radius: 5px; padding: 10px; margin: 10px; border: 1px solid #FEFEFE; font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center;";
+//     i++;
+// }
+// alert(document.querySelector(".com").getAttribute("id"));
+// document.querySelector(".com").setAttribute("id" , "VP");
+
+// let items = document.getElementById("items");
+// let item = document.createElement('li');
+// item.innerHTML = "Item 2";
+// items.prepend(item);
+// let btn = document.createElement('button');
+// btn.innerHTML = "Click Me";
+// items.append(btn);
+// btn.addEventListener('click', function(){
+//     btn.remove();
+// });
+// let button = document.createElement("button");
+// button.innerHTML = "bUTTON";
+// document.querySelector('body').prepend(button);
+// button.style = "background:red";
+let btn1 = document.getElementsByClassName("com")[0];
+let currentMODE = "light";
+btn1.addEventListener("click" , () =>{
+    if (currentMODE === 'light'){
+    document.body.style = "color: white;background:black";
+    document.querySelector("div").style = "border: 1px solid white; border-radius: 5px; padding: 10px; margin: 10px; font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center;";
+    btn1.innerText = 'Light Mode';
+    currentMODE = 'dark';
+    } else {
+    document.body.style = "color: black;background:white";
+    document.querySelector("div").style = "border: 1px solid black; border-radius: 5px; padding: 10px; margin: 10px; font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center;";
+    btn1.innerText = 'Dark Mode';
+    currentMODE = 'light';
+    }
+
+});
+// btn1.onclick = (evt) => {
+//     console.log(evt.type,evt.type );
+// }
